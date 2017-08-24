@@ -6104,7 +6104,7 @@ Vue$3.prototype.$mount = function (
   return this._mount(el, hydrating)
 };
 
-if ("development" !== 'production' &&
+if (process.env.NODE_ENV !== 'production' &&
     inBrowser && typeof console !== 'undefined') {
   console[console.info ? 'info' : 'log'](
     "You are running Vue in development mode.\n" +
